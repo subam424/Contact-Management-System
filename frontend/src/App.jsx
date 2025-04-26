@@ -11,7 +11,7 @@ const [showUpdate, setShowUpdate] = useState(false)
 
   return (
     <>
-      <Added />
+      {/* <Added /> */}
       <Nav setShowModal={setShowModal} showModal={showModal}/>
 
       {showModal &&
@@ -27,6 +27,9 @@ const [showUpdate, setShowUpdate] = useState(false)
       }
 
       <div className="grid grid-cols-1 md:grid-cols-3 mx-auto p-5 max-w-6xl gap-5">
+        <Card role={"Family"} setShowUpdate={setShowUpdate} showUpdate={showUpdate} />
+        <Card role={"Family"} setShowUpdate={setShowUpdate} showUpdate={showUpdate} />
+        <Card role={"Family"} setShowUpdate={setShowUpdate} showUpdate={showUpdate} />
         <Card role={"Family"} setShowUpdate={setShowUpdate} showUpdate={showUpdate} />
       </div>
 

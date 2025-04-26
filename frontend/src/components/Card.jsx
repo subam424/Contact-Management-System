@@ -16,7 +16,7 @@ const Card = ({role='Friend', showUpdate, setShowUpdate}) => {
       <div className="flex gap-3 items-center text-3xl md:text-5xl justify-start">
         <FontAwesomeIcon icon={faCircleUser}/>
         <div className="flex flex-col">
-          <h1 className="text-lg md:text-xl">Full Name</h1>
+          <h1 className="text-lg">Full Name</h1>
           <h4 className="text-slate-300 text-sm">{role}</h4>
         </div>
       </div>
